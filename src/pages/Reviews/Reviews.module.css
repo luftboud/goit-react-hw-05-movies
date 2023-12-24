@@ -1,0 +1,25 @@
+.Container  {
+    margin-top: 30px;
+    padding: 20px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.List {
+    list-style: none;
+    padding: 0;
+}
+.Item {
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    border-radius: 4px;
+    padding: 15px;
+    margin-bottom: 10px;
+    font-family: monospace;
+}
+.Item h3 {
+    margin: 0;
+
+}
+.Item h4 {
+    margin: 5px 0 0;
+    font-size: 13px;
+    font-weight: 300;
+}

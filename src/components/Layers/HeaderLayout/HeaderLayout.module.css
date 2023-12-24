@@ -1,0 +1,22 @@
+.Navbar {
+    display: flex;
+    background-color: #150929;
+    width: 100%;
+    height: 50px;
+    align-items: center;
+}
+.List {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    gap: 14px;
+}
+.Link {
+    color: #bfb2d5;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.Link:hover {
+    color: rgb(220, 210, 238);
+}

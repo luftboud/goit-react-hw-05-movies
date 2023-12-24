@@ -1,0 +1,21 @@
+.Container {
+    padding: 10px 20px;
+
+}
+.MainInfo {
+    display: flex;
+    gap: 17px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.AddInfo {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 10px;
+    margin-top: 20px;
+}
+.List {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 18px;
+    padding: 0;
+}
