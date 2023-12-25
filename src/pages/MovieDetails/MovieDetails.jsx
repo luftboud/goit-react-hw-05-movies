@@ -1,11 +1,14 @@
 import axios from "axios"
-import { Link, Outlet, useParams } from "react-router-dom";
+import { Link, Outlet, useParams, useLocation } from "react-router-dom";
 import { useEffect, useState } from "react"
 import { API_KEY } from "components/App"
 import css from "./MovieDetails.module.css"
 const MovieDetails = () => {
     const [movie, setMovie] = useState({})
     const { movieId } = useParams();
+    const location = useLocation();
+    console.log(location);
+    const backLinkHref = location.state?.from ?? "/";
     console.log(movieId);
 
     useEffect(() => {
@@ -22,6 +25,7 @@ const MovieDetails = () => {
         
         <div className={css.Container}>
             {/* <button></button> */}
+            <Link to={backLinkHref}>Back</Link>
             <div className={css.MainInfo}>
                 <img src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`} alt="" />
                 <div>
