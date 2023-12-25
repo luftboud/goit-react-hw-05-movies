@@ -61,4 +61,4 @@ const Movies = () => {
         </div>
     )
 }
-export {Movies}
+export default Movies

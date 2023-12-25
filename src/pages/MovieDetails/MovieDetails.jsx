@@ -66,5 +66,4 @@ const MovieDetails = () => {
         
     )
 }
-export { MovieDetails }
-// https://image.tmdb.org/t/p/w500/$%7Bobj.backdrop_path
+export default  MovieDetails 

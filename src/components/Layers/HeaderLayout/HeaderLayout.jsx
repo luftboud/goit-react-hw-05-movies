@@ -1,4 +1,5 @@
 import { Outlet, NavLink } from "react-router-dom";
+import { Suspense } from "react";
 import css from "./HeaderLayout.module.css"
 
 const HeaderLayout = () => {
@@ -13,11 +14,11 @@ const HeaderLayout = () => {
               <NavLink to="/movies" className={css.Link}>Movies</NavLink>
             </li>
           </ul>
-      </nav> 
-        <Outlet>
-          
-        </Outlet>
+        </nav> 
+        <Suspense fallback={<div className={css.Loader}><p>Loading...</p></div>}>
+          <Outlet />
+         </Suspense>
         </>
     )
 }
-export { HeaderLayout };
+export default  HeaderLayout ;

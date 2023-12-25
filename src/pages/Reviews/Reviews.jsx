@@ -42,4 +42,4 @@ const Reviews = () => {
         </div>
     )
 }
-export {Reviews}
+export default Reviews
