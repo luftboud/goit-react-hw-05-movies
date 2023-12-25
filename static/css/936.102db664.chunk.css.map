@@ -1,0 +1,1 @@
+{"version":3,"file":"static/css/936.102db664.chunk.css","mappings":"AAAA,uBACI,YACJ,CACA,kBACI,iBACJ,CACA,oBAEI,aAAuB,CADvB,oBAGJ","sources":["pages/Home/Home.module.css"],"sourcesContent":[".Container {\n    padding: 20px;\n}\n.Item {\n    list-style: number;\n}\n.Item a {\n    text-decoration: none;\n    color: rgb(97, 29, 161);\n\n}"],"names":[],"sourceRoot":""}
