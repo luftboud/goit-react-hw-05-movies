@@ -22,7 +22,7 @@ const Reviews = () => {
              <h2>Reviews</h2>
              <ul className={css.List}>
                  {
-                     reviews.results ? (
+                     reviews.results && reviews.results.length !== 0 ? (
                         reviews.results.map(r => {
                                 return (
                                     <li key={r.id} className={css.Item}>

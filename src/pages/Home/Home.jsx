@@ -17,9 +17,9 @@ const Home = () => {
         FetchData()
     }, [])
     return (
-        <div>
+        <div className={css.Container}>
             <h1>Trending today</h1>
-            <div className={css.Container}>
+            <div >
                 <ul className={css.List}>
                 {trends.map(el => {
                     return(<li key={el.id} className={css.Item}>

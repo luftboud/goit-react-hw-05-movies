@@ -21,8 +21,9 @@ const Cast = () => {
         <div className={css.Container}> 
              <h2>Cast</h2>
              <ul className={css.List}>
-                        {
-                            cast.cast?.map(c => {
+                 {
+                      cast.cast && cast.cast.length !== 0 ? (
+                        cast.cast?.map(c => {
                                 return (<li key={c.id} className={css.Item}>
                                     <img src={`https://image.tmdb.org/t/p/w500/${c.profile_path}`} alt={`${c.name} pic`} />
                                     <p>{c.name}</p>
@@ -30,6 +31,10 @@ const Cast = () => {
                                     </li>
                                 )
                             }) 
+                     ) : (
+                             <h3>There is no info about cast yet...</h3>
+                         )
+                            
                     
                     }
                     </ul>
@@ -37,5 +42,3 @@ const Cast = () => {
     )
 }
 export { Cast }
-
-// TODO 1. finish cast 2. reviews 3. search 4. button back 5. lazy load

@@ -1,0 +1,35 @@
+.Container {
+    padding: 20px;
+}
+.Form input {
+    height: 30px;
+    width: 333px;
+    box-sizing: border-box;
+    margin-right: 14px;
+    border: 1px solid #30145e;
+    border-radius: 4px;
+}
+.Form input:focus {
+    border: 2px solid #4807b1;
+    outline: none
+}
+.Form button {
+    height: 30px;
+    width: 133px;
+    box-sizing: border-box;
+    text-transform: uppercase;
+    color: #150929;
+    background-color: #bfb2d5;
+    border: 1px solid #30145e;
+    border-radius: 4px;
+}
+.Form button:hover {
+    background-color: #c5b4e5;
+}
+.List {
+list-style: none;
+}
+.List a {
+    color: #270858;
+    text-decoration: none;
+}
