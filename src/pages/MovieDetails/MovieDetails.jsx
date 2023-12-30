@@ -24,7 +24,6 @@ const MovieDetails = () => {
     return (
         
         <div className={css.Container}>
-            {/* <button></button> */}
             <Link to={backLinkHref}>Back</Link>
             <div className={css.MainInfo}>
                 <img src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`} alt="" />
@@ -50,10 +49,10 @@ const MovieDetails = () => {
                 <p>Additional info</p>
                 <ul className={css.List}>
                     <li>
-                        <Link to="cast">Cast</Link>
+                        <Link to="cast" state={{ from: backLinkHref }}>Cast</Link>
                     </li>
                     <li>
-                        <Link to="reviews">Reviews</Link>
+                        <Link to="reviews" state={{ from: backLinkHref }}>Reviews</Link>
                     </li>
                 </ul>
             </div>
